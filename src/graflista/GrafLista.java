@@ -8,7 +8,15 @@ import java.util.ArrayList;
 public class GrafLista {
     class Graph{
             ArrayList<ArrayList<Integer>> graph;
-        }
+            int V;
+            Graph(int nodes){
+                V = nodes;
+                graph = new ArrayList<ArrayList<Integer>>();
+                for(int i=0;i<V;i++){
+                        graph.add(new ArrayList<Integer>());
+                }
+            }
+    }
     /**
      * @param args the command line arguments
      */
