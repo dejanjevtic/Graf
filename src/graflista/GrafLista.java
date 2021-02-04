@@ -1,16 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package graflista;
 
+package graflista;
+import java.util.ArrayList;
 /**
  *
  * @author Dejan
  */
 public class GrafLista {
-
+    class Graph{
+            ArrayList<ArrayList<Integer>> graph;
+        }
     /**
      * @param args the command line arguments
      */
