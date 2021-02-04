@@ -24,9 +24,9 @@ import java.util.ArrayList;
             
             void stampajGraf(){
                     for(int i=0;i<V;i++){
-                        System.out.print("Node : ");
-                        for(int x: graph.get(i)) System.out.println(" -> " + x);
-                        
+                        System.out.print("Node : "+ i);
+                        for(int x: graph.get(i)) System.out.print(" -> " + x);
+                        System.out.println();
                     }
             }
     }
@@ -39,6 +39,15 @@ public class GrafLista {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Graph g = new Graph(5);
+        g.dodajLink(0,1);
+        g.dodajLink(3,2);
+        g.dodajLink(2,4);
+        g.dodajLink(1,4);
+        g.dodajLink(3,1);
+        g.dodajLink(2,0);
+        g.stampajGraf();
+        
     }
     
 }
